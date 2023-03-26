@@ -1,0 +1,42 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[textwidth=16cm]{geometry} % wider text
+\usepackage{parskip} % for whitespace between paragraphs
+% \usepackage{minted} % for colored code blocks, we can add custom color themes for code blocks too
+
+\usepackage{graphicx}
+% \graphicspath{ {./images/} } % relative images path
+
+\usepackage{hyperref} % for refs to files, web sites, etc
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdfpagemode=FullScreen,
+    }
+
+
+% Environments for text folding in kile
+\newenvironment{Section} % for some fucking reason there needs to be 2 empty lines below this or the compiler will complain
+
+
+\title{1. template file}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{Section} % begin and end environemtn so this can be folder in the latex editor
+\section{section}
+section content
+
+\subsection{subsection}
+subsection content
+
+\end{Section}
+
+
+\end{document}
